@@ -1,0 +1,159 @@
+/* Google font Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #000;
+}
+body {
+  border: 16px solid #1d1e4c;
+  background: #e5e5fd;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+.container {
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+/* Biography Section */
+.biography .inner-container {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 104px;
+  align-items: end;
+  gap: 3.875rem;
+}
+.biography text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.biography .text h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.biography .text h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 33px;
+  text-align: end;
+}
+.profile_pic img {
+  width: 100%;
+}
+.profile_pic {
+  width: 314px;
+  height: 392px;
+}
+
+/* Article Section */
+.article .inner-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+.article h1 {
+  color: #000;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+.article blockquote {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px; /* 183.333% */
+  letter-spacing: 0.72px;
+}
+.article blockquote span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.72px;
+}
+
+/* Bio Section */
+.bio .inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 127px;
+}
+.bio h1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+}
+.bio .items {
+  margin-left: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Footer Section */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  right: 3rem;
+}
+.footer h1 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.footer span {
+  color: #0a4eff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Breakpoint for max-width of 1120px */
+@media (max-width: 1120px) {
+  body {
+    padding: 5rem;
+  }
+  .biography .inner-container {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Breakpoint for max-width of 920px */
+@media (max-width: 920px) {
+  .article h1 {
+    font-size: 40px;
+  }
+}
+
+/* Breakpoint for max-width of 768px */
+@media (max-width: 768px) {
+  .article h1 {
+    font-size: 30px;
+  }
+  .biography .text h1 {
+    font-size: 1.5rem;
+  }
+  .biography .text h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Breakpoint for max-width of 480px */
+@media (max-width: 480px) {
+  .article h1 {
+    font-size: 20px;
+  }
+
+  .biography .text h1 {
+    font-size: 1rem;
+  }
+  .biography .text h2 {
+    font-size: 0.5rem;
+  }
+}
